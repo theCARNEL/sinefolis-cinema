@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now Showing | Sinéfolis Cinemas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Sinéfolis</h1>
+                <span class="tagline">Premium Cinema Experience</span>
+            </div>
+            <nav>
+                <ul class="desktop-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="promo.html">Promos</a></li>
+                    <li><a href="now-showing.html" class="active">Now Showing</a></li>
+                    <li><a href="cinemas.html">Our Cinemas</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="promo.html">Promos</a></li>
+                <li><a href="now-showing.html" class="active">Now Showing</a></li>
+                <li><a href="cinemas.html">Our Cinemas</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="page-banner now-showing-banner-bg">
+        <div class="container">
+            <div class="page-banner-content">
+                <h1>Now <span class="highlight">Showing</span></h1>
+                <p>Discover the latest movies playing at Sinéfolis Cinemas</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="movies-grid">
+        <div class="container">
+            <div class="movies">
+                <div class="movie-item" data-categories="adventure comedy">
+                    <div class="movie-poster">
+                        <img src="asset/minecraftmovie.jpeg" alt="A Minecraft Movie">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i>
+                            <span>5.7</span>
+                        </div>
+                        <div class="movie-overlay">
+                            <a href="#" class="btn movie-details-btn" data-movie="movie1">View Details</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>A Minecraft Movie</h3>
+                        <p class="movie-genre">Adventure | Comedy</p>
+                        <p class="movie-duration"><i class="far fa-clock"></i> 1h 41m</p>
+                    </div>
+                </div>
+
+                <div class="movie-item" data-categories="action comedy">
+                    <div class="movie-poster">
+                        <img src="asset/novocaine.png" alt="Novocaine">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i>
+                            <span>6.5</span>
+                        </div>
+                        <div class="movie-overlay">
+                            <a href="#" class="btn movie-details-btn" data-movie="movie2">View Details</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Novocaine</h3>
+                        <p class="movie-genre">Action | Comedy</p>
+                        <p class="movie-duration"><i class="far fa-clock"></i> 1h 50m</p>
+                    </div>
+                </div>
+
+                <div class="movie-item" data-categories="horror">
+                    <div class="movie-poster">
+                        <img src="asset/pabrikgula.jpg" alt="Pabrik Gula">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i>
+                            <span>8.8</span>
+                        </div>
+                        <div class="movie-overlay">
+                            <a href="#" class="btn movie-details-btn" data-movie="movie3">View Details</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Pabrik Gula</h3>
+                        <p class="movie-genre">Horror</p>
+                        <p class="movie-duration"><i class="far fa-clock"></i> 2h 13m</p>
+                    </div>
+                </div>
+
+                <div class="movie-item" data-categories="comedy family">
+                    <div class="movie-poster">
+                        <img src="asset/paddington.jpg" alt="Paddington in Peru">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i>
+                            <span>6.9</span>
+                        </div>
+                        <div class="movie-overlay">
+                            <a href="#" class="btn movie-details-btn" data-movie="movie4">View Details</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Paddington in Peru</h3>
+                        <p class="movie-genre">Comedy | Family</p>
+                        <p class="movie-duration"><i class="far fa-clock"></i> 1h 45m</p>
+                    </div>
+                </div>
+
+                <div class="movie-item" data-categories="action sci-fi">
+                    <div class="movie-poster">
+                        <img src="asset/captainamerica.jpg" alt="Captain America: Brave New World">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i>
+                            <span>6.0</span>
+                        </div>
+                        <div class="movie-overlay">
+                            <a href="#" class="btn movie-details-btn" data-movie="movie5">View Details</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Captain America: Brave New World</h3>
+                        <p class="movie-genre">Action | Sci-fy</p>
+                        <p class="movie-duration"><i class="far fa-clock"></i> 1h 58m</p>
+                    </div>
+                </div>
+
+                <div class="movie-item" data-categories="sci-fi">
+                    <div class="movie-poster">
+                        <img src="asset/mickey17.png" alt="Mickey 17">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i>
+                            <span>7.1</span>
+                        </div>
+                        <div class="movie-overlay">
+                            <a href="#" class="btn movie-details-btn" data-movie="movie6">View Details</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Mickey 17</h3>
+                        <p class="movie-genre">Sci-Fi | Adventure</p>
+                        <p class="movie-duration"><i class="far fa-clock"></i> 2h 17m</p>
+                    </div>
+                </div>
+
+                <div class="movie-item" data-categories="family fantasy">
+                    <div class="movie-poster">
+                        <img src="asset/snowwhite.jpeg" alt="Snow White">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i>
+                            <span>2.1</span>
+                        </div>
+                        <div class="movie-overlay">
+                            <a href="#" class="btn movie-details-btn" data-movie="movie7">View Details</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Snow White</h3>
+                        <p class="movie-genre">Family | Fantasy</p>
+                        <p class="movie-duration"><i class="far fa-clock"></i> 1h 49m</p>
+                    </div>
+                </div>
+
+                <div class="movie-item" data-categories="drama romance">
+                    <div class="movie-poster">
+                        <img src="asset/blackbag.jpg" alt="Black Bag">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i>
+                            <span>7.2</span>
+                        </div>
+                        <div class="movie-overlay">
+                            <a href="#" class="btn movie-details-btn" data-movie="movie8">View Details</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Black Bag</h3>
+                        <p class="movie-genre">Spy | Drama</p>
+                        <p class="movie-duration"><i class="far fa-clock"></i> 1h 33m</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="movie-details-modal" id="movie-details-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="movie-modal-info">
+                    <div class="movie-modal-poster">
+                        <img src="assets/images/movie1.jpg" alt="Movie Poster" id="modal-poster">
+                    </div>
+                    <div class="movie-modal-details">
+                        <h2 id="modal-title">Movie Title</h2>
+                        <p class="modal-genre" id="modal-genre">Genre</p>
+                        <div class="modal-meta">
+                            <span id="modal-duration"><i class="far fa-clock"></i> Duration</span>
+                            <span id="modal-rating"><i class="fas fa-star"></i> Rating</span>
+                            <span id="modal-release"><i class="far fa-calendar-alt"></i> Release Date</span>
+                            <span id="modal-rated" class="modal-rated">Rated</span>
+                        </div>
+                        <div class="modal-cast">
+                            <h3>Cast</h3>
+                            <p id="modal-cast">Cast members</p>
+                        </div>
+                        <div class="modal-plot">
+                            <h3>Synopsis</h3>
+                            <p id="modal-plot">Plot description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-showtime">
+                    <h3>Select Showtime</h3>
+                    <div class="cinema-selector">
+                        <select id="cinema-select">
+                            <option value="">Select a Cinema</option>
+                            <option value="central">Sinéfolis Central Jakarta</option>
+                            <option value="north">Sinéfolis North Jakarta</option>
+                            <option value="south">Sinéfolis South Jakarta</option>
+                        </select>
+                    </div>
+                    <div class="date-picker">
+                        <button class="date-btn active" data-date="May 17">Today</button>
+                        <button class="date-btn" data-date="May 18">Tomorrow</button>
+                        <button class="date-btn" data-date="May 19">Sun, May 19</button>
+                        <button class="date-btn" data-date="May 20">Mon, May 20</button>
+                        <button class="date-btn" data-date="May 21">Tue, May 21</button>
+                    </div>
+                    <div class="time-slots">
+                        <h4>Regular</h4>
+                        <div class="time-buttons">
+                            <button class="time-btn">10:30 AM</button>
+                            <button class="time-btn">1:15 PM</button>
+                            <button class="time-btn">4:00 PM</button>
+                            <button class="time-btn">6:45 PM</button>
+                            <button class="time-btn">9:30 PM</button>
+                        </div>
+                        <h4>IMAX</h4>
+                        <div class="time-buttons">
+                            <button class="time-btn premium">11:00 AM</button>
+                            <button class="time-btn premium">2:30 PM</button>
+                            <button class="time-btn premium">5:45 PM</button>
+                            <button class="time-btn premium">8:15 PM</button>
+                        </div>
+                        <h4>Gold Class</h4>
+                        <div class="time-buttons">
+                            <button class="time-btn gold">12:00 PM</button>
+                            <button class="time-btn gold">3:45 PM</button>
+                            <button class="time-btn gold">7:30 PM</button>
+                        </div>
+                    </div>
+                    <button class="btn primary book-btn">Book Tickets</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Sinéfolis</h2>
+                    <p>Premium Cinema Experience</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="promo.html">Promos</a></li>
+                            <li><a href="now-showing.html">Now Showing</a></li>
+                            <li><a href="cinemas.html">Our Cinemas</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Jendral Sudirman Kav. 52-53, Jakarta</p>
+                        <p><i class="fas fa-phone"></i> +62 xx xxxx xxxx</p>
+                        <p><i class="fas fa-envelope"></i> info@sinefolis.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Sinéfolis Cinemas. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="movies.js"></script>
+</body>
+</html>

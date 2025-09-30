@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Sinéfolis Cinemas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Sinéfolis</h1>
+                <span class="tagline">Premium Cinema Experience</span>
+            </div>
+            <nav>
+                <ul class="desktop-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="promo.html">Promos</a></li>
+                    <li><a href="now-showing.html">Now Showing</a></li>
+                    <li><a href="cinemas.html">Our Cinemas</a></li>
+                    <li><a href="feedback.html" class="active">Feedback</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="promo.html">Promos</a></li>
+                <li><a href="now-showing.html">Now Showing</a></li>
+                <li><a href="cinemas.html">Our Cinemas</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="page-banner feedback-banner-bg">
+        <div class="container">
+            <div class="page-banner-content">
+                <h1>Your <span class="highlight">Feedback</span></h1>
+                <p>Help us improve your cinema experience</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback-section">
+        <div class="container">
+            <div class="feedback-container">
+                <div class="feedback-info">
+                    <h2>We Value Your <span class="highlight">Opinion</span></h2>
+                    <p>At Sinéfolis, we're committed to providing the best possible cinema experience. Your feedback helps us understand what we're doing well and where we can improve.</p>
+                    <div class="feedback-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>feedback@sinefolis.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+62 xx xxxx xxxx</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Jl. Jendral Sudirman Kav. 52-53, Jakarta</p>
+                        </div>
+                    </div>
+                    <div class="feedback-image">
+                        <img src="assets/images/feedback.jpg" alt="Feedback">
+                    </div>
+                </div>
+                <div class="feedback-form-container">
+                    <h3>Share Your Experience</h3>
+                    <form id="feedback-form" class="feedback-form" onsubmit="return validateFeedbackForm()">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name">
+                            <span class="error-message", id="name-error"></span>
+                            <!--<div class="error-message" id="name-error"></div>-->
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address">
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                            <div class="error-message" id="phone-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="visit-date">Date of Visit <span class="required">*</span></label>
+                            <input type="date" id="visit-date" name="visit-date">
+                            <div class="error-message" id="visit-date-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cinema">Cinema Location <span class="required">*</span></label>
+                            <select id="cinema" name="cinema">
+                                <option value="">Select a cinema</option>
+                                <option value="grand-indonesia">Sinéfolis Grand Indonesia</option>
+                                <option value="plaza-indonesia">Sinéfolis Plaza Indonesia</option>
+                                <option value="pondok-indah">Sinéfolis Pondok Indah Mall</option>
+                                <option value="paris-van-java">Sinéfolis Paris van Java</option>
+                                <option value="trans-studio">Sinéfolis Trans Studio Mall</option>
+                                <option value="tunjungan-plaza">Sinéfolis Tunjungan Plaza</option>
+                                <option value="galaxy-mall">Sinéfolis Galaxy Mall</option>
+                                <option value="beachwalk-bali">Sinéfolis Beachwalk Bali</option>
+                            </select>
+                            <div class="error-message" id="cinema-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Rate Your Experience <span class="required">*</span></label>
+                            <div class="rating-group">
+                                <div class="rating" id="rating">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                                <div class="rating-text">Click to rate</div>
+                                <input type="hidden" id="rating-value" name="rating-value" value="0">
+                            </div>
+                            <div class="error-message" id="rating-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedback-message">Your Feedback <span class="required">*</span></label>
+                            <textarea id="feedback-message" name="feedback-message" placeholder="Please share your experience, suggestions, or concerns"></textarea>
+                            <div class="error-message" id="feedback-message-error"></div>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                            <label for="subscribe">Subscribe to newsletter for updates and promotions</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms">
+                            <label for="terms">I agree to the <a href="#">terms and conditions</a> <span class="required">*</span></label>
+                            <div class="error-message" id="terms-error"></div>
+                        </div>
+                        <div class="form-action">
+                            <button type="submit" class="btn primary">Submit Feedback</button>
+                            <button type="reset" class="btn secondary">Reset Form</button>
+                        </div>
+                    </form>
+                    <div id="form-submission-message" class="submission-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Sinéfolis</h2>
+                    <p>Premium Cinema Experience</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="promo.html">Promos</a></li>
+                            <li><a href="now-showing.html">Now Showing</a></li>
+                            <li><a href="cinemas.html">Our Cinemas</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Jendral Sudirman Kav. 52-53, Jakarta</p>
+                        <p><i class="fas fa-phone"></i> +62 xx xxxx xxxx</p>
+                        <p><i class="fas fa-envelope"></i> info@sinefolis.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Sinéfolis Cinemas. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="feedback.js"></script>
+</body>
+</html>

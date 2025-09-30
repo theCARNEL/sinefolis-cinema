@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cinemas | Sinéfolis Cinemas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Sinéfolis</h1>
+                <span class="tagline">Premium Cinema Experience</span>
+            </div>
+            <nav>
+                <ul class="desktop-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="promo.html">Promos</a></li>
+                    <li><a href="now-showing.html">Now Showing</a></li>
+                    <li><a href="cinemas.html" class="active">Our Cinemas</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="promo.html">Promos</a></li>
+                <li><a href="now-showing.html">Now Showing</a></li>
+                <li><a href="cinemas.html" class="active">Our Cinemas</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="page-banner cinemas-banner-bg">
+        <div class="container">
+            <div class="page-banner-content">
+                <h1>Our <span class="highlight">Cinemas</span></h1>
+                <p>Discover our premium cinema locations across Indonesia</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cinemas-grid">
+        <div class="container">
+            <div class="cinemas">
+                <div class="cinema-item" data-city="jakarta">
+                    <div class="cinema-image">
+                        <img src="asset/grandindonesia.jpg" alt="Sinéfolis Grand Indonesia">
+                        <div class="cinema-overlay">
+                            <a href="#" class="btn cinema-details-btn" data-cinema="cinema1">View Details</a>
+                        </div>
+                    </div>
+                    <div class="cinema-info">
+                        <h3>Sinéfolis Grand Indonesia</h3>
+                        <p class="cinema-location"><i class="fas fa-map-marker-alt"></i> Central Jakarta</p>
+                        <div class="cinema-features">
+                            <span><i class="fas fa-film"></i> IMAX</span>
+                            <span><i class="fas fa-couch"></i> Gold Class</span>
+                            <span><i class="fas fa-utensils"></i> Dining</span>
+                        </div>
+                        <a href="now-showing.html" class="btn secondary">View Showtimes</a>
+                    </div>
+                </div>
+
+                <div class="cinema-item" data-city="jakarta">
+                    <div class="cinema-image">
+                        <img src="asset/plazaindonesia.png" alt="Sinéfolis Plaza Indonesia">
+                        <div class="cinema-overlay">
+                            <a href="#" class="btn cinema-details-btn" data-cinema="cinema2">View Details</a>
+                        </div>
+                    </div>
+                    <div class="cinema-info">
+                        <h3>Sinéfolis Plaza Indonesia</h3>
+                        <p class="cinema-location"><i class="fas fa-map-marker-alt"></i> Central Jakarta</p>
+                        <div class="cinema-features">
+                            <span><i class="fas fa-film"></i> 4DX</span>
+                            <span><i class="fas fa-couch"></i> Premium</span>
+                            <span><i class="fas fa-utensils"></i> Dining</span>
+                        </div>
+                        <a href="now-showing.html" class="btn secondary">View Showtimes</a>
+                    </div>
+                </div>
+
+                <div class="cinema-item" data-city="jakarta">
+                    <div class="cinema-image">
+                        <img src="asset/pondokindahmall.jpg" alt="Sinéfolis Pondok Indah Mall">
+                        <div class="cinema-overlay">
+                            <a href="#" class="btn cinema-details-btn" data-cinema="cinema3">View Details</a>
+                        </div>
+                    </div>
+                    <div class="cinema-info">
+                        <h3>Sinéfolis Pondok Indah Mall</h3>
+                        <p class="cinema-location"><i class="fas fa-map-marker-alt"></i> South Jakarta</p>
+                        <div class="cinema-features">
+                            <span><i class="fas fa-film"></i> IMAX</span>
+                            <span><i class="fas fa-couch"></i> Gold Class</span>
+                            <span><i class="fas fa-baby"></i> Kids Cinema</span>
+                        </div>
+                        <a href="now-showing.html" class="btn secondary">View Showtimes</a>
+                    </div>
+                </div>
+
+                <div class="cinema-item" data-city="bandung">
+                    <div class="cinema-image">
+                        <img src="asset/transstudio.jpg" alt="Sinéfolis Trans Studio Mall">
+                        <div class="cinema-overlay">
+                            <a href="#" class="btn cinema-details-btn" data-cinema="cinema4">View Details</a>
+                        </div>
+                    </div>
+                    <div class="cinema-info">
+                        <h3>Sinéfolis Trans Studio Mall</h3>
+                        <p class="cinema-location"><i class="fas fa-map-marker-alt"></i> Bandung</p>
+                        <div class="cinema-features">
+                            <span><i class="fas fa-film"></i> 4DX</span>
+                            <span><i class="fas fa-couch"></i> Gold Class</span>
+                            <span><i class="fas fa-baby"></i> Kids Cinema</span>
+                        </div>
+                        <a href="now-showing.html" class="btn secondary">View Showtimes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cinema-details-modal" id="cinema-details-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="cinema-modal-info">
+                    <div class="cinema-modal-images">
+                        <img src="assets/images/cinema1.jpg" alt="Cinema" id="modal-cinema-main">
+                    </div>
+                    <div class="cinema-modal-details">
+                        <h2 id="modal-cinema-title">Cinema Name</h2>
+                        <p class="modal-location" id="modal-location"><i class="fas fa-map-marker-alt"></i> Location</p>
+                        <div class="modal-features" id="modal-features">
+                            <!-- Features will be inserted here -->
+                        </div>
+                        <div class="modal-address">
+                            <h3>Address</h3>
+                            <p id="modal-address">Address</p>
+                        </div>
+                        <div class="modal-info">
+                            <h3>Information</h3>
+                            <p id="modal-info">Cinema information</p>
+                        </div>
+                        <div class="modal-facilities">
+                            <h3>Facilities</h3>
+                            <ul id="modal-facilities">
+                                <!-- Facilities will be inserted here -->
+                            </ul>
+                        </div>
+                        <div class="modal-hours">
+                            <h3>Opening Hours</h3>
+                            <p id="modal-hours">Opening hours</p>
+                        </div>
+                        <div class="modal-contact">
+                            <h3>Contact</h3>
+                            <p id="modal-contact">Contact information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <a href="now-showing.html" class="btn primary">View Showtimes</a>
+                    <a href="#" class="btn secondary" id="modal-map-link">View on Map</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Sinéfolis</h2>
+                    <p>Premium Cinema Experience</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="promo.html">Promos</a></li>
+                            <li><a href="now-showing.html">Now Showing</a></li>
+                            <li><a href="cinemas.html">Our Cinemas</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Jendral Sudirman Kav. 52-53, Jakarta</p>
+                        <p><i class="fas fa-phone"></i> +62 xx xxxx xxxx</p>
+                        <p><i class="fas fa-envelope"></i> info@sinefolis.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Sinéfolis Cinemas. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="cinemas.js"></script>
+</body>
+</html>

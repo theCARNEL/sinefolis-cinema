@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinéfolis Cinemas | Premium Movie Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Sinéfolis</h1>
+                <span class="tagline">Premium Cinema Experience</span>
+            </div>
+            <nav>
+                <ul class="desktop-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="promo.html">Promos</a></li>
+                    <li><a href="now-showing.html">Now Showing</a></li>
+                    <li><a href="cinemas.html">Our Cinemas</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="promo.html">Promos</a></li>
+                <li><a href="now-showing.html">Now Showing</a></li>
+                <li><a href="cinemas.html">Our Cinemas</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Experience Cinema <span class="highlight">Redefined</span></h1>
+            <p>Comfortable seating, Magnificent sound and projection, Enjoy the big screen.</p>
+            <div class="hero-cta">
+                <a href="now-showing.html" class="btn primary">View Movies</a>
+                <a href="#explore" class="btn secondary">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="explore" class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <div class="stat-number">48</div>
+                <div class="stat-label">Cinemas</div>
+                <p>Across Indonesia</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">320</div>
+                <div class="stat-label">Screens</div>
+                <p>With premium technology</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">12</div>
+                <div class="stat-label">Cities</div>
+                <p>And growing every month</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Experience Types</div>
+                <p>Premium, IMAX, Gold Class, 4DX</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-movies">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span class="highlight">Movies</span></h2>
+                <p>The latest blockbusters and exclusive screenings</p>
+                <a href="now-showing.html" class="view-all">View All Movies</a>
+            </div>
+            <div class="movie-carousel">
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="asset/minecraftmovie.jpeg" alt="Movie Poster">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i>
+                            <span>5.7</span>
+                        </div>
+                    </div>
+                    <div class="movie-details">
+                        <h3>A Minecraft Movie</h3>
+                        <p class="movie-genre">Adventure | Comedy</p>
+                        <a href="now-showing.html" class="btn small">Book Now</a>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="asset/novocaine.png" alt="Movie Poster">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i>
+                            <span>6.5</span>
+                        </div>
+                    </div>
+                    <div class="movie-details">
+                        <h3>Novocaine</h3>
+                        <p class="movie-genre">Action | Comedy</p>
+                        <a href="now-showing.html" class="btn small">Book Now</a>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="asset/pabrikgula.jpg" alt="Movie Poster">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i>
+                            <span>8.8</span>
+                        </div>
+                    </div>
+                    <div class="movie-details">
+                        <h3>Pabrik Gula</h3>
+                        <p class="movie-genre">Horror</p>
+                        <a href="now-showing.html" class="btn small">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <h2>Exclusive <span class="highlight">Promotions</span></h2>
+                <p>Discover our latest deals and membership benefits for an enhanced cinema experience</p>
+                <a href="promo.html" class="btn primary">View Promos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay <span class="highlight">Updated</span></h2>
+                <p>Subscribe to our newsletter for exclusive updates, promos, and special screening announcements</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn primary">Subscribe</button>
+                </form>
+                <div id="newsletter-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Sinéfolis</h2>
+                    <p>Premium Cinema Experience</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="promo.html">Promos</a></li>
+                            <li><a href="now-showing.html">Now Showing</a></li>
+                            <li><a href="cinemas.html">Our Cinemas</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Jendral Sudirman Kav. 52-53, Jakarta</p>
+                        <p><i class="fas fa-phone"></i> +62 xx xxxx xxxx</p>
+                        <p><i class="fas fa-envelope"></i> info@sinefolis.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Sinéfolis Cinemas. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
